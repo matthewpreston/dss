@@ -2,10 +2,11 @@
 
 // Add scripts and stylesheets
 function startwordpress_scripts() {
-	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6');
-	wp_enqueue_style('blog', get_template_directory_uri() . '/css/blog.css');
-	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.6', true);
-  wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js');
+	wp_enqueue_style('css-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6');
+	wp_enqueue_style('css-blog', get_template_directory_uri() . '/css/blog.css');
+  wp_enqueue_script('js-jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '3.3.1', true);
+	wp_enqueue_script('js-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('js-jquery'), '4.0.0', true);
+  wp_enqueue_script('js-main', get_template_directory_uri() . '/js/main.js', array('js-jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'startwordpress_scripts');
 
