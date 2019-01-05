@@ -1,6 +1,5 @@
-<?php if ( post_password_required() ) {
-	return;
-} ?>
+<?php if (post_password_required()) { return; } ?>
+<div class="divider blog-post-divider"></div>
 <div id="comments" class="comments-area">
 	<?php if (have_comments()): ?>
 		<h3 class="comments-title">
@@ -19,7 +18,10 @@
 			?>
 		</ul>
 	<?php endif; ?>
-	<?php if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) : ?>
+	<?php
+	if (!comments_open() && get_comments_number()
+			&& post_type_supports(get_post_type(), 'comments')):
+	?>
 		<p class="no-comments">
 			<?php _e('Comments are closed.'); ?>
 		</p>

@@ -6,7 +6,7 @@
 		<div class="divider blog-post-divider"></div>
 		<p class="blog-post-meta">
 			<strong><?php the_date(); ?></strong> by 
-			<strong><a href="#"><?php the_author(); ?></a></strong> • 
+			<strong><?php the_author(); ?></strong> • 
 			<strong>
 				<a href="<?php comments_link(); ?>">
 					<?php

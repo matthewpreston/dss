@@ -38,7 +38,7 @@
 					<li class="nav-item">
 						<a class="nav-link dropdown-toggle" id="navbar-archive" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archive</a>
 						<div class="dropdown-menu" aria-labelledby="navbar-about">
-							<a class="dropdown-item" href="#">Posts</a>
+							<a class="dropdown-item" href="/archive">Posts</a>
 							<a class="dropdown-item" href="https://www.flickr.com/photos/154578217@N08/albums">Pictures</a>
 							<a class="dropdown-item" href="/monthly-newsletter">Newsletter</a>
 						</div>
@@ -61,18 +61,16 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbar-opportunities" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opportunities</a>
 						<div class="dropdown-menu" aria-labelledby="navbar-opportunities">
-							<a class="dropdown-item" href="#">Externships</a>
+							<a class="dropdown-item" href="/externships">Externships</a>
 							<!-- Future implementation
 							<a class="dropdown-item" href="#">How to Guides</a>
 							-->
 						</div>
 					</li>
 			</div>
-			
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			<form id="searchform" class="serachform form-inline my-2 my-lg-0" role="search" method="get" action="<?php echo get_bloginfo('wpurl'); ?>">
+				<input id="s" class="form-control mr-sm-2" type="text" name="s" placeholder="Search" aria-label="Search">
+				<button id="searchsubmit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
-			
 		</nav>
 	</div>

@@ -30,6 +30,9 @@ $(document).ready(function() {
 	// Make the div that houses the carousel a constant height as to not have it
 	// bob up and down when post length changes (despite that's what a fun
 	// carousel does...)
+  /* 
+   * NOTE - after adding the smooth scrolling effects, this is no longer that
+   * useful...
 	var maxCarouselHeight = 0;
 	carouselItems.each(function(index, elem) { // Find max height of blog posts
 		var thisHeight = getTrueHeight($(this));
@@ -39,6 +42,7 @@ $(document).ready(function() {
 	$(".blog-article").css("min-height", maxCarouselHeight);	// Temp. adj. height
 	maxCarouselHeight = getTrueHeight($(".blog-article"));		// Add button height
 	$(".blog-article").height(maxCarouselHeight);							// Final height
+  */
 
   /* ===== Carousel Button Interactivity ==================================== */
   // Enlarges previous/next icons when moused over, back to normal when off

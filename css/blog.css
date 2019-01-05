@@ -182,7 +182,7 @@ a:link, a:hover, a:active, a:visited {
   width: 60%;
 }
 #blog-carousel {
-  min-height: 50rem;
+  min-height: 55rem;
 }
 .blog-carousel-button-icon-wrapper {
   width: 100%;
@@ -241,7 +241,9 @@ a:link, a:hover, a:active, a:visited {
   margin-left: auto;
   margin-right: auto;
 }
-
+.blog-post-content figcaption {
+  font-size: 0.9rem;
+}
 .blog-see-more {
   font-size: 2rem;
   margin: 2rem 0rem 3rem 0rem ;
@@ -297,4 +299,21 @@ a:link, a:hover, a:active, a:visited {
  */
 .blog-tooth {
   text-align: center;
+}
+
+/*
+ * Archives
+ */
+.search-bar {
+  text-align: center;
+}
+.archives {
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+/*
+ * Comments
+ */
+.comments-area {
+  margin-top: 1rem;
 }

@@ -22,7 +22,7 @@
 		<div id="blog-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
 	  	<div class="carousel-inner">
 				<?php
-				$MAX_POSTS = 2;
+				$MAX_POSTS = 3;
 				$post_num = 0;
 				$have_posts = have_posts(); // have_posts() resets WP's 'The Loop' as side effect
 				for (; $have_posts && $post_num < $MAX_POSTS; $have_posts = have_posts(), $post_num++):
@@ -37,7 +37,7 @@
 			</div>
 			<?php if ($have_posts && $post_num == $MAX_POSTS): ?>
 				<div class="blog-see-more">
-					<a class="button" href="#">More Posts</a>
+					<a class="button" href="/archive">More Posts</a>
 				</div>
 			<?php endif; ?>
 		</div>
