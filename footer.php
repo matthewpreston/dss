@@ -10,7 +10,7 @@
 					<a href="https://www.instagram.com/uoftdss/" title="DSS - Instagram"><img class="blog-icon" src="<?php echo get_bloginfo('template_directory');?>/img/instagram logo.svg"></a>
 				</div>
 				<div class="col-sm-2 col-sm-offset-1 blog-copyright">
-					<p>DSS <?php echo date("Y"); ?></p>
+					<a href="commissioners">DSS <?php echo date("Y"); ?></a>
 				</div>
 			</div>
 		</div>

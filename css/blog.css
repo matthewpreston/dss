@@ -47,7 +47,6 @@ a:link, a:hover, a:active, a:visited {
   height: 1px;
   margin: 10px auto;
 }
-
 .flexbox-centered {
   display: flex;
   justify-content: center;
@@ -68,6 +67,7 @@ a:link, a:hover, a:active, a:visited {
  * Blog logo
  */
 .blog-logo {
+  margin: 0rem 0.7rem;
   width: 200px;
 }
 
@@ -96,23 +96,6 @@ a:link, a:hover, a:active, a:visited {
   color: #edfdfb;
 }
 
-/* Active state gets a caret at the bottom */
-.blog-nav .active {
-  color: #fff;
-}
-.blog-nav .active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -5px;
-  vertical-align: middle;
-  content: " ";
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid;
-  border-left: 5px solid transparent;
-}
 
 /*
  * Blog name and description
@@ -160,6 +143,12 @@ a:link, a:hover, a:active, a:visited {
   font-weight: 300;
   font-size: 2rem;
   padding: 0.3rem 0.7rem;
+}
+.blog-welcome-button:hover {
+  background-color: #FFFFFF80;
+}
+.blog-welcome-button:active {
+  background-color: #FFFFFFA0;
 }
 
 /*
@@ -224,6 +213,9 @@ a:link, a:hover, a:active, a:visited {
   margin: 2rem 0rem 0rem 0rem;
   font-size: 1.2rem;
 }
+.blog-post-single {
+  margin: 2rem auto;
+}
 .blog-post-header {
   margin-bottom: 1.5rem;
 }
@@ -259,6 +251,12 @@ a:link, a:hover, a:active, a:visited {
   border: 1px solid #505050;
   padding: 0.3rem 0.7rem;
 }
+.blog-see-more a:hover {
+  background-color: #00000020;
+}
+.blog-see-more a:active {
+  background-color: #00000060;
+}
 
 /*
  * Footer
@@ -289,7 +287,14 @@ a:link, a:hover, a:active, a:visited {
   margin: auto;
   text-align: center;
 }
-.blog-copyright p {
+.blog-copyright a {
   margin: auto;
   font-size: 2rem;
+}
+
+/*
+ * 404
+ */
+.blog-tooth {
+  text-align: center;
 }

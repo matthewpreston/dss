@@ -81,13 +81,11 @@ $(document).ready(function() {
     $(".hidden").each(function() {
       // Check the location of each desired element
       var objectTop = $(this).offset().top;
-      var OFFSET = 100; // Number of pixels of offset before fade effects engage
+      var OFFSET = 150; // Number of pixels of offset before fade effects engage
       
       // If the element peaks through scrolling window
       if (objectTop + OFFSET < windowBottom) { // Object in view (scroll down)
-        if ($(this).css("opacity") == 0) $(this).fadeTo(500, 1);
-      } else { // Object goes out of view (scroll up)
-        if ($(this).css("opacity") == 1) $(this).fadeTo(500, 0);
+        $(this).fadeTo(500, 1).removeClass("hidden");
       }
     });
   }).scroll(); //invoke scroll-handler on page-load
