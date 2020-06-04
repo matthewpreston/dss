@@ -102,6 +102,9 @@ a:link, a:hover, a:active, a:visited {
  */
 .blog-welcome {
   background: url("/wp-content/themes/dss/img/dentistry-building3.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -29,10 +29,19 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbar-about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 						<div class="dropdown-menu" aria-labelledby="navbar-about">
-							<a class="dropdown-item" href="/about">About Us</a>
-							<a class="dropdown-item" href="/commissioners">DSS Members</a>
+							<a class="dropdown-item" href="/about">DSS Members</a>
 							<a class="dropdown-item" href="/class-council">Class Council</a>
-							<a class="dropdown-item" href="/subcommittees">Subcommittees</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbar-activities" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activities</a>
+						<div class="dropdown-menu" aria-labelledby="navbar-activities">
+							<a class="dropdown-item" href="/events">Events Calendar</a>
+							<a class="dropdown-item" href="/student-clubs">Student Clubs</a>
+							<a class="dropdown-item" href="/intramural-sports">Intramural Sports</a>
+							<!-- Future implementation
+							<a class="dropdown-item" href="#">Club Funding Forms</a>
+							-->
 						</div>
 					</li>
 					<li class="nav-item">
@@ -41,21 +50,6 @@
 							<a class="dropdown-item" href="/archive">Posts</a>
 							<a class="dropdown-item" href="https://www.flickr.com/photos/154578217@N08/albums">Pictures</a>
 							<a class="dropdown-item" href="/monthly-newsletter">Newsletter</a>
-						</div>
-					</li>
-					<!-- Future implementation
-					<li class="nav-item">
-						<a class="nav-link" href="#">Calendar</a>
-					</li>
-					-->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="navbar-activities" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activities</a>
-						<div class="dropdown-menu" aria-labelledby="navbar-activities">
-							<a class="dropdown-item" href="/student-clubs">Student Clubs</a>
-							<a class="dropdown-item" href="/intramural-sports">Intramural Sports</a>
-							<!-- Future implementation
-							<a class="dropdown-item" href="#">Club Funding Forms</a>
-							-->
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -68,7 +62,7 @@
 						</div>
 					</li>
 			</div>
-			<form id="searchform" class="serachform form-inline my-2 my-lg-0" role="search" method="get" action="<?php echo get_bloginfo('wpurl'); ?>">
+			<form id="searchform" class="searchform form-inline my-2 my-lg-0" role="search" method="get" action="<?php echo get_bloginfo('wpurl'); ?>">
 				<input id="s" class="form-control mr-sm-2" type="text" name="s" placeholder="Search" aria-label="Search">
 				<button id="searchsubmit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
