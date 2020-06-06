@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<div class="blog-welcome hidden">
-	<div class="blog-welcome-tooth">
+<div class="blog-welcome hidden" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/dentistry-building3.jpg');">
+	<div class="blog-welcome-tooth" style="background-image: url('<?php echo get_bloginfo('template_directory');?>/img/Tooth Framework.svg');">
 		<div class="blog-welcome-content">
 			<h1 class="blog-welcome-text blog-welcome-maintext">Dental Students' Society</h1>
 			<h2 class="blog-welcome-text blog-welcome-subtext">Welcomes You</h2>

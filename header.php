@@ -39,6 +39,7 @@
 							<a class="dropdown-item" href="/events">Events Calendar</a>
 							<a class="dropdown-item" href="/student-clubs">Student Clubs</a>
 							<a class="dropdown-item" href="/intramural-sports">Intramural Sports</a>
+							<a class="dropdown-item" href="/fundraisers">Charitable Recognition Initiative</a>
 							<!-- Future implementation
 							<a class="dropdown-item" href="#">Club Funding Forms</a>
 							-->

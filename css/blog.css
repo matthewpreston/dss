@@ -101,7 +101,6 @@ a:link, a:hover, a:active, a:visited {
  * Blog name and description
  */
 .blog-welcome {
-  background: url("/wp-content/themes/dss/img/dentistry-building3.jpg") no-repeat center center fixed;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -112,7 +111,8 @@ a:link, a:hover, a:active, a:visited {
   color: #FFFFFF;
 }
 .blog-welcome-tooth {
-  background: url("/wp-content/themes/dss/img/Tooth Framework.svg") no-repeat center center;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: auto 90%;
 }
 .blog-welcome-content {
@@ -236,6 +236,14 @@ a:link, a:hover, a:active, a:visited {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+.blog-post-content a:link, .blog-post-content a:hover, .blog-post-content a:active, .blog-post-content a:visited {
+  color: inherit;
+  font-weight: bold;
+  outline: 0;
+}
+.blog-post-content a:hover, .blog-post-content a:active {
+  text-decoration: underline;
+}
 .blog-post-content p::before {
   content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0"
 }
@@ -246,6 +254,14 @@ a:link, a:hover, a:active, a:visited {
 }
 .blog-post-content figcaption {
   font-size: 0.9rem;
+}
+.blog-post-epilogue {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  height: 4.5rem;
+  width: 4.5rem;
 }
 .blog-see-more {
   font-size: 2rem;

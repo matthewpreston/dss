@@ -6,14 +6,14 @@
 		<div class="divider blog-post-divider"></div>
 		<p class="blog-post-meta">
 			<strong><?php the_date(); ?></strong> by 
-			<strong><?php the_author(); ?></strong> • 
+			<strong><?php the_author(); ?></strong><!-- • 
 			<strong>
 				<a href="<?php comments_link(); ?>">
 					<?php
 					printf(_nx('One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain'), number_format_i18n(get_comments_number()));
 					?>
 				</a>
-			</strong>
+			</strong>-->
 		</p>
 	</div>
 	<div class="blog-post-content">
