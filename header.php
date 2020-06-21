@@ -30,7 +30,10 @@
 						<a class="nav-link dropdown-toggle" id="navbar-about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 						<div class="dropdown-menu" aria-labelledby="navbar-about">
 							<a class="dropdown-item" href="/about">DSS Members</a>
-							<a class="dropdown-item" href="/class-council">Class Council</a>
+							<a class="dropdown-item" href="/class-council-dds4">Class Council - DDS4</a>
+							<a class="dropdown-item" href="/class-council-dds3">Class Council - DDS3</a>
+							<a class="dropdown-item" href="/class-council-dds2">Class Council - DDS2</a>
+							<a class="dropdown-item" href="/class-council-dds1">Class Council - DDS1</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">

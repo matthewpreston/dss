@@ -251,6 +251,16 @@ a:link, a:hover, a:active, a:visited {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 1rem;
+}
+.blog-post-content .wp-block-media-text figure img {
+  border-color: #555;
+  border-width: 3px;
+  border-style: solid;
+  padding: 5px;
+}
+.blog-post-content .wp-block-media-text figure {
+  padding-bottom: 1rem;
 }
 .blog-post-content figcaption {
   font-size: 0.9rem;
