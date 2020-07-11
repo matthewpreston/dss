@@ -1,14 +1,35 @@
 <?php
 
+// === Make the Gutenberg editor space wider ===================================
+function make_gutenberg_editor_wider() {
+  wp_enqueue_style( 'legit-editor-styles', get_theme_file_uri( '/css/gutenberg-editor.css' ), false, '1.0', 'all' );
+}
+add_action('enqueue_block_editor_assets', 'make_gutenberg_editor_wider');
+
 // === Add scripts and stylesheets =============================================
-function startwordpress_scripts() {
-	wp_enqueue_style('css-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6');
-	wp_enqueue_style('css-blog', get_template_directory_uri() . '/css/blog.css');
+function blog_styles() {
+  wp_enqueue_style('css-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6');
+  wp_enqueue_style('css-blog', get_template_directory_uri() . '/css/blog.css');
+
+  // Specific CSS
+  if (is_page_template('clubs.php')) {
+    wp_enqueue_style('css-flickity', get_template_directory_uri() . '/css/flickity.min.css');
+    wp_enqueue_style('css-clubs', get_template_directory_uri() . '/css/clubs.css');
+  }
+}
+add_action('wp_enqueue_scripts', 'blog_styles');
+
+function blog_scripts() {
   wp_enqueue_script('js-jquery', get_template_directory_uri() . '/js/jquery.min.js', array(), '3.3.1', true);
 	wp_enqueue_script('js-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('js-jquery'), '4.0.0', true);
   wp_enqueue_script('js-main', get_template_directory_uri() . '/js/main.js', array('js-jquery'), '1.0.0', true);
+
+  // Specific JS
+  if (is_page_template('clubs.php')) {
+    wp_enqueue_script('js-flickity', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array('js-jquery'), '2.2.1', true);
+  }
 }
-add_action('wp_enqueue_scripts', 'startwordpress_scripts');
+add_action('wp_enqueue_scripts', 'blog_scripts');
 
 // === Add additional Wordpress Features =======================================
 add_theme_support('title-tag');       // WordPress Titles
