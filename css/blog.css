@@ -259,6 +259,8 @@ a:link, a:hover, a:active, a:visited {
   border-width: 3px;
   border-style: solid;
   padding: 5px;
+  width: 100%;
+  height: auto;
 }
 .blog-post-content .wp-block-media-text figure {
   padding-bottom: 1rem;
@@ -346,11 +348,4 @@ a:link, a:hover, a:active, a:visited {
  */
 .comments-area {
   margin-top: 1rem;
-}
-
-/*
- * Other Custom CSS
- */
-.wp-block-media-text__media img, .wp-block-media-text__media video {
-  height: auto;
 }
