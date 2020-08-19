@@ -233,6 +233,10 @@ a:link, a:hover, a:active, a:visited {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+.blog-featured-thumbnail img {
+  width: 100%;
+  height: auto;
+}
 .blog-post-content a:link, .blog-post-content a:hover, .blog-post-content a:active, .blog-post-content a:visited {
   color: inherit;
   font-weight: bold;
@@ -342,4 +346,11 @@ a:link, a:hover, a:active, a:visited {
  */
 .comments-area {
   margin-top: 1rem;
+}
+
+/*
+ * Other Custom CSS
+ */
+.wp-block-media-text__media img, .wp-block-media-text__media video {
+  height: auto;
 }

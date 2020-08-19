@@ -4,12 +4,14 @@
  */
 ?>
 <?php get_header(); ?>
-<div class="container">
+<div class="archive-container">
 	<div class="blog-post">
     <?php the_post(); ?>
 		<div class="blog-post-header">
 			<h1 class="blog-post-title"><?php the_title(); ?></h1>
-			<div class="divider blog-post-divider"></div>
+		</div>
+		<div class="blog-featured-thumbnail">
+			<?php if (has_post_thumbnail()) the_post_thumbnail(); ?>
 		</div>
     <div class="blog-post-content">
       <?php the_content(); ?>

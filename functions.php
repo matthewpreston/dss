@@ -16,6 +16,9 @@ function blog_styles() {
     wp_enqueue_style('css-flickity', get_template_directory_uri() . '/css/flickity.min.css');
     wp_enqueue_style('css-clubs', get_template_directory_uri() . '/css/clubs.css');
   }
+  if (is_page_template('archive.php')) {
+    wp_enqueue_style('css-archive', get_template_directory_uri() . '/css/archive.css');
+  }
 }
 add_action('wp_enqueue_scripts', 'blog_styles');
 
