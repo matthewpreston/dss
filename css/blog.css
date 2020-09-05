@@ -253,6 +253,8 @@ a:link, a:hover, a:active, a:visited {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 1rem;
+  width: 100%;
+  height: auto;
 }
 .blog-post-content .wp-block-media-text figure img {
   border-color: #555;

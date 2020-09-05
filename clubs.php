@@ -16,7 +16,7 @@
 	$(".wp-block-getwid-section").hover(
 		function() { // Hover over
 			var object = $(this).find(".wp-block-columns").first();
-			object.css("background-image", "radial-gradient(#E2E2E269, #E2E2E200");
+			object.css("background-image", "radial-gradient(#E2E2E269, #FFFFFF00");
 			object.find(".flickity-enabled").flickity("playPlayer");
 		}, function() { // Hover off
 			var object = $(this).find(".wp-block-columns").first();
